@@ -1,6 +1,10 @@
 language: go
 os: linux
 
+arch:
+  - amd64
+  - ppc64le
+
 # fuse on travis
 sudo: required
 dist: bionic # Ubuntu 18.04 "Bionic", https://docs.travis-ci.com/user/reference/bionic/
