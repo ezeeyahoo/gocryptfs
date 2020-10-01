@@ -28,7 +28,7 @@ go:
 
 before_install:
   - sudo apt-get install -qq fuse
-  - sudo find /lib/modules/ -name fuse.ko*
+  - sudo find /usr/lib/modules/ -name fuse.ko*
   - sudo modprobe fuse
   - sudo chmod 666 /dev/fuse
   - sudo chown root:$USER /etc/fuse.conf
